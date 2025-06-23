@@ -148,14 +148,14 @@ class AccountController extends Controller
         if($reviews == null){
             return response()->json([
                 'status' => false,
-                'message' => 'Review not found',
+                'message' => 'Post not found',
             ]);
         }else{
             $reviews->delete();
-            Session()->flash('success','Review deleted successfully.');
+            Session()->flash('success','Post deleted successfully.');
             return response()->json([
                 'status' => true,
-                'message' => 'Review deleted successfully.',
+                'message' => 'Post deleted successfully.',
             ]);
         }
     }

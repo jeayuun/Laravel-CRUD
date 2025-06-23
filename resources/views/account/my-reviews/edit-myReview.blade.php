@@ -11,20 +11,20 @@
                 @include('layouts.message')
                 <div class="card border-0 shadow">
                     <div class="card-header  text-white">
-                        Edit Reviews
+                        Edit Posts
                     </div>
                     <div class="card-body">
                         <form action="{{ route('account.updateMyReview',$review->id) }}" method="POST">
                         @csrf
 
                         <div class="mb-3">
-                            <label for="User" class="form-label">Book</label> 
+                            <label for="User" class="form-label">Movie</label> 
                             <input value="{{ $review->book->title }}" disabled class="form-control">
                             
                         </div>
 
                             <div class="mb-3">
-                                <label for="User" class="form-label">Reviews</label>
+                                <label for="User" class="form-label">Posts</label>
                                 <textarea placeholder="Review" class="form-control @error('review') is-invalid @enderror" name="review" id="review">{{old('review',$review->review)}}</textarea>
                                 @error('review')
                                     <p class="invalid-feedback">{{ $message }}</p>

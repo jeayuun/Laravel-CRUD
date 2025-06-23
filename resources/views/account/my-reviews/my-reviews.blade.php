@@ -71,7 +71,7 @@
 @section('script')
     <script>
         function deleteReview(id){
-            if(confirm("Are you sure you want to delete?")){
+            if(confirm("Are you sure you want to delete this post?")){
                 $.ajax({
                     url: '{{ route("account.deleteMyReview") }}',
                     type:'delete',

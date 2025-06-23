@@ -142,10 +142,10 @@ class BookController extends Controller
     public function destroy(Request $request){
         $book = Book::find($request->id);
         if($book == null){
-            session()->flash('error','Book not found');
+            session()->flash('error','Movie not found');
             return response()->json([
                 'status' => false,
-                'message' => 'Book not found',
+                'message' => 'Movie not found',
             ]);
         }else{
 

@@ -66,7 +66,7 @@
                                             </tr>
                                             @endforeach
                                         @else
-                                            <td colspan="5">Movies not found</td>
+                                            <td colspan="5">Movies not found.</td>
                                     @endif
                                 </tbody>
                             </thead>

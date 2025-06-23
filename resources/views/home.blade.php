@@ -7,7 +7,7 @@
             <div class="col-md-12">
                 <div class="pink_card">
                     <h2 class="mb-3">Welcome to the Barbie Movies Forum</h2>
-                    <p>Join the discussion, share your reviews, and connect with fellow Barbie movie fans. <br>Whether you're a fan of the classics or the latest releases, this is the place to talk all things Barbie ~!</p>
+                    <p>Join the discussion, share your thoughts, and connect with fellow Barbie movie fans. <br>Whether you're a fan of the classics or the latest releases, this is the place to talk all things Barbie ~!</p>
                 </div>
                 <div class="card shadow-lg search">
                     <form action="" method="get"> 
@@ -38,7 +38,7 @@
                                     </a>
                                     <div class="card-body">
                                         <h3 class="h4 heading"><a href="#">{{ $book->title }}</a></h3>
-                                        <p>By: {{ $book->author }}</p>
+                                        <p>{{ $book->author }}</p>
                                         @php
                                         if($book->reviews_count > 0){
                                             $avgRating = $book->reviews_sum_rating/$book->reviews_count;
@@ -66,7 +66,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <span class="theme-font text-muted">({{ ($book->reviews_count > 1) ? $book->reviews_count.'Reviews' : 'Review' }})</span>
+                                            <!-- <span class="theme-font text-muted">({{ ($book->reviews_count > 1) ? $book->reviews_count.' Reviews' : 'Review' }})</span> -->
                                         </div>
                                     </div>
                                 </div>

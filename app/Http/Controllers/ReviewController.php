@@ -25,14 +25,14 @@ class ReviewController extends Controller
     public function destroy(Request $request){
         $review = Review::find($request->id);
         if($review == null){
-            Session()->flash('error','Review not found.');
+            Session()->flash('error','Post not found.');
             return response()->json([
                 'status' => false,
-                'message' => 'review not found',
+                'message' => 'Post not found',
             ]);
         }else{
             $review->delete();
-            session()->flash('success','Review deleted successfully.');
+            session()->flash('success','Post deleted successfully.');
         }
     }
 
@@ -59,7 +59,7 @@ class ReviewController extends Controller
         $review->status = $request->status;
         $review->save();
 
-        session()->flash('success','Review updated successfully.');
+        session()->flash('success','Post updated successfully.');
         return redirect()->route('books.reviews');
     }
     

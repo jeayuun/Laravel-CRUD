@@ -11,7 +11,7 @@
                 @include('layouts.message')
                 <div class="card border-0 shadow">
                     <div class="card-header  text-white">
-                        Add Book
+                        Add Movie
                     </div>
                     <div class="card-body">
                         <form action="{{ route('books.store') }}" method="post" enctype="multipart/form-data">

@@ -48,7 +48,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <span class="theme-font text-muted">({{ ($book->reviews_count > 1) ? $book->reviews_count.'Reviews' : 'Review' }})</span>
+                            <!-- <span class="theme-font text-muted">({{ ($book->reviews_count > 1) ? $book->reviews_count.'Reviews' : 'Review' }})</span> -->
                             </div>
 
                         <div class="content mt-3">
@@ -201,7 +201,7 @@
                 <div class="modal-body">
                         <div class="mb-3">
                             <label for="" class="form-label">Post</label>
-                            <textarea name="review" id="review" class="form-control" cols="5" rows="5" placeholder="Review"></textarea>
+                            <textarea name="review" id="review" class="form-control" cols="5" rows="5" placeholder="Post"></textarea>
                             <p class="invalid-feedback" id="review-error"></p>
                         </div>
                         <div class="mb-3">
