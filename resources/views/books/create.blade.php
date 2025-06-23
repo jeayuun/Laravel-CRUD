@@ -24,8 +24,8 @@
                                 @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="author" class="form-label">Author</label>
-                                <input type="text" value="{{ old('author') }}" class="form-control @error('author') is-invalid @enderror" placeholder="Author"  name="author" id="author"/>
+                                <label for="author" class="form-label">Year</label>
+                                <input type="text" value="{{ old('author') }}" class="form-control @error('author') is-invalid @enderror" placeholder="Year"  name="author" id="author"/>
                                 @error('author')
                                     <p class="invalid-feedback">{{ $message }}</p>
                                 @enderror

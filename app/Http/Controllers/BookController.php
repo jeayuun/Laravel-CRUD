@@ -37,7 +37,7 @@ class BookController extends Controller
         
         $rules = [
             'title' => 'required|min:5',
-            'author' => 'required|min:5',
+            'author' => 'required|min:4',
             'status' => 'required',
         ];
 
